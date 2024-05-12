@@ -1,0 +1,19 @@
+#Navbar {
+    width: 100%;
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        column-gap: 2em;
+
+        li{
+
+            .NavLink{
+                
+                &:global.active{
+                    color: red;
+                }
+            }
+        }
+    }
+}
