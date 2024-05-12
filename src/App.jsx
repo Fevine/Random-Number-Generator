@@ -3,6 +3,7 @@ import './App.css'
 import MainLayout from './Layouts/MainLayout'
 import Ranberator from './Pages/Ranberator'
 import Ranpointator from './Pages/Ranpointator'
+import ErrorPage from './Pages/Error Page'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Route path='/' element={<MainLayout />} >
         <Route path='/ranberator' element={<Ranberator />} />
         <Route path='/ranpointator' element={<Ranpointator />} />
+        <Route path='*' element={<ErrorPage />} />
       </Route>
     </Routes>
   )
